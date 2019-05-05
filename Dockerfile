@@ -61,4 +61,6 @@ ENV COCOS_TEMPLATES_ROOT=/opt/cocos2d-x-3.17.1/templates
 ENV COCOS_CONSOLE_ROOT=/opt/cocos2d-x-3.17.1/tools/cocos2d-console/bin
 ENV PATH ${ANDROID_SDK_ROOT}/tools:${ANDROID_SDK_ROOT}/platform-tools:${NDK_ROOT}:${COCOS_CONSOLE_ROOT}:${PATH}
 
+WORKDIR /workspace
+
 CMD /bin/bash
