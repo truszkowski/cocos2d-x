@@ -32,6 +32,7 @@ RUN apt-get -y install \
 
 RUN apt-get -y install wget 
 
+WORKDIR /opt/
 #ADD sdk-tools-linux-4333796.tar.gz /opt
 RUN \
 	wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip && \
@@ -43,8 +44,6 @@ RUN \
 	wget https://digitalocean.cocos2d-x.org/Cocos2D-X/cocos2d-x-3.17.1.zip && \
 	unzip cocos2d-x-3.17.1.zip && \
 	rm -rf cocos2d-x-3.17.1.zip
-
-WORKDIR /opt/
 
 RUN apt-get -y remove openjdk-11-* && apt-get -y install openjdk-8-jdk openjdk-8-jre
 RUN cd ./tools/bin && \
