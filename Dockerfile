@@ -30,6 +30,8 @@ RUN apt-get -y install \
 	libglfw3-dev \
 	xorg-dev
 
+RUN apt-get -y install wget 
+
 #ADD sdk-tools-linux-4333796.tar.gz /opt
 RUN \
 	wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip && \
