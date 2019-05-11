@@ -1,3 +1,5 @@
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/ptru/cocos2d-x.svg?style=for-the-badge)
+
 # Cocos2d-x for automate builds
 
 Docker image: `ptru/cocos2d-x:latest`
